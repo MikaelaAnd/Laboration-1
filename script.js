@@ -19,3 +19,7 @@ function changeLane() {
     if (elem.value=="Pick a lane!") elem.value = "Shred away!";
     else elem.value = "Pick a lane!";
 }
+
+function redLane() {
+    alert("Alright Player one! Shredding down the red lane, you are now facing a big jump! What do you want to do?");
+}
