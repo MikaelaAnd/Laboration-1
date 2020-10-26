@@ -10,6 +10,12 @@ function pickALane() {
             return(decideLane);
         } else (decideLane == "Green Lane") 
             alert("Good choice! Head down to the green lane!");
-        
+
 }
-console.log(pickALane);
+
+function changeLane() {
+
+    let elem = document.getElementById("change");
+    if (elem.value=="Pick a lane!") elem.value = "Shred away!";
+    else elem.value = "Pick a lane!";
+}
