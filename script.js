@@ -3,19 +3,13 @@ function startGame() {
 }
 
 function pickALane() {
-    var text;
-    var decideLane = prompt("Which lane? Red lane or Green Lane?");
-    switch(decideLane) {
-        case "Red Lane":
-            text = "Great! Head down to the red lane!";
-            break;
-        case "Green Lane":
-            text = "Good choice! Head down to the green lane!";
-            break;
-        default:
-            text = "Pick again!";
-            break;
+    let decideLane = prompt("Which lane? Red lane or Green Lane?");
 
-    }
+        if (decideLane == "Red Lane") {
+            alert("Great! Head down to the red lane!");
+            return(decideLane);
+        } else (decideLane == "Green Lane") 
+            alert("Good choice! Head down to the green lane!");
+        
 }
 console.log(pickALane);
