@@ -65,11 +65,11 @@ const scenes = [
     //HÄNDELSEFÖRLOPP 3
     { // Röd bana 6
         description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today but welcome back tomorrow!",
-        return(scenes)
+        
     },
     { // Grön bana 8
         description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymor today though but welcome back tomorrow!",
-        return(scenes)
+       
     },
     { // Röd bana 9
         description: "You landed perfectly, you ski-boot was just playing a trick in the wind! You swoosh pass a couple of admirers and you are now in the end of the mountain. Do you want to go again, write 'Yes' or 'No'",
