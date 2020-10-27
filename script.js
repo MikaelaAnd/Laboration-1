@@ -34,6 +34,7 @@ const scenes = [
         choices: ["Green lane", "Red lane"],
         nextScene: [2, 1]
     }, 
+    //HÄNDELSEFÖRLOPP
     { //Röd bana 1
         description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump, Yes or No?",
         choices: ["Yes", "No"],
@@ -44,22 +45,30 @@ const scenes = [
         choices: ["Yes", "No"],
         nextScene: [4, 6]
     },
-    {// Röd bana 3, slut
+    { //Röd bana 3
+        description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write 'Try', if youy want to hope for the best and just land, write 'Land'. ",
+        choices: ["Turn", "Land"],
+        nextScene: [-,-]
+    },
+
+
+    //SLUT-VAL
+    {// Röd bana -, slut
         description: "Wow! What a jump!!!! You are really good at this Player one! You are now at the end of the mountain. Do you want to go again?",
         choices: ["Yes", "No"],
         nextScene: [0,7]
     },
-    { // Grön bana 4, slut
+    { // Grön bana -, slut
         description: "Wow what a picture! You'll get 30 likes in one minute! You are now at the end of the hill, do you want to go again?",
         choices: ["Yes", "No"],
         nextScene: [0, 7]
     },
-    { // Röd bana 5, ej hopp
+    { // Röd bana -, ej hopp
         description: "Safety first! You chose not to jump, you are now safe and sound down by the lift, do you want to go again?",
         choices: ["Yes", "No"],
         nextScene: [0, 7]
     },
-    { // Grön bana 6, ej kort
+    { // Grön bana -, ej kort
         description: "Player one! You are not into the social media, you want to be in the moment! You have now shredded down the beautiful mountain and are at the end. Do you want to go again?",
         choices: ["Yes", "No"],
         nextScene: [0, 7]
@@ -79,6 +88,7 @@ function presentScene() {
     handleUserChoice(answer)
 
 }
+
 
 function handleUserChoice(answer) {
     console.log(answer);
