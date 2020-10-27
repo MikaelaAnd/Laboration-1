@@ -38,7 +38,7 @@ const scenes = [
     { //Röd bana 1
         description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump, Yes or No?",
         choices: ["Yes", "No"],
-        nextScene: [4, -3]
+        nextScene: [4, 3]
     },
     { //Grön bana 2
         description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram?",
@@ -54,7 +54,7 @@ const scenes = [
     //HÄNDELSEFÖRLOPP 2
     { // Röd bana 4
         description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write 'Try', if youy want to hope for the best and just land, write 'Land'. ",
-        choices: ["Turn", "Land"],
+        choices: ["Try", "Land"],
         nextScene: [6, 8]
     },
     { // Grön bana 5
@@ -65,10 +65,12 @@ const scenes = [
     //HÄNDELSEFÖRLOPP 3
     { // Röd bana 6
         description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today but welcome back tomorrow!",
+        nextScene: [0, 0]
         
     },
     { // Grön bana 8
         description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymor today though but welcome back tomorrow!",
+        nextScene: [0, 0]
        
     },
     { // Röd bana 9
@@ -82,7 +84,8 @@ const scenes = [
         nexScene: [0, 10]
     },
     { // SLUT 10
-        descriptiopn: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!"
+        descriptiopn: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
+        nextScene: [0, 0]
     }
 ];
 // Run our applications
@@ -105,7 +108,8 @@ function handleUserChoice(answer) {
     }
     if (answer === scenes[currentScene].choices[1]) {
         currentScene = scenes[currentScene].nextScene[1]
-    }
+    } 
+    
 
     presentScene()
 }
