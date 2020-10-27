@@ -53,14 +53,14 @@ const scenes = [
     },
     //HÄNDELSEFÖRLOPP 2
     { // Röd bana 4
-        description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write 'Try', if youy want to hope for the best and just land, write 'Land'. ",
+        description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write Try, if youy want to hope for the best and just land, write Land. ",
         choices: ["Try", "Land"],
         nextScene: [6, 8]
     },
     { // Grön bana 5
-        description: "Argh! Your phone is not acclimated with the cold weather, you only got 1% battery left. Ok Player one, you got two options: Write 'Rush' if you want to rush down to the after-ski and charge your phone or write 'Calm' if you don't care about the battery and just wanna enjoy the skiing down to the lift again",
+        description: "Argh! Your phone is not acclimated with the cold weather, you only got 1% battery left. Ok Player one, you got two options: Write Rush if you want to rush down to the after-ski and charge your phone or write Calm if you don't care about the battery and just wanna enjoy the skiing down to the lift again",
         choices: ["Rush", "Calm"],
-        nextScene: [8, 9]
+        nextScene: [7, 9]
     },
     //HÄNDELSEFÖRLOPP 3
     { // Röd bana 6
@@ -68,18 +68,18 @@ const scenes = [
         nextScene: [0, 0]
         
     },
-    { // Grön bana 8
+    { // Grön bana 7
         description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymor today though but welcome back tomorrow!",
         nextScene: [0, 0]
        
     },
-    { // Röd bana 9
+    { // Röd bana 8
         description: "You landed perfectly, you ski-boot was just playing a trick in the wind! You swoosh pass a couple of admirers and you are now in the end of the mountain. Do you want to go again, write 'Yes' or 'No'",
         choices: ["Yes", "No"],
         nextScene: [0, 10]
     },
-    { // Grön bana 8
-        description: "You calmely kept on skiing down the mountain without the stress of looking at likes on your wonderful picture. Now you are down, do you want to go again? Write 'Yes' or 'No",
+    { // Grön bana 9
+        description: "You calmly kept on skiing down the mountain without the stress of looking at likes on your wonderful picture. Now you are down, do you want to go again? Write 'Yes' or 'No",
         choices: ["Yes", "No"],
         nexScene: [0, 10]
     },
