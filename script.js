@@ -30,26 +30,42 @@ let currentScene = 0
 
 const scenes = [
     { // Start 0
-        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on?",
-        choices: ["Green lane", "Red Lane"],
+        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Red lane or Green Lane?",
+        choices: ["Green lane", "Red lane"],
         nextScene: [2, 1]
     }, 
     { //Röd bana 1
-        description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! What do you want to do?",
+        description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump, Yes or No?",
         choices: ["Yes", "No"],
-        nextScene: [3, 3]
+        nextScene: [3, 5]
     },
     { //Grön bana 2
         description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram?",
         choices: ["Yes", "No"],
-        nextScene: [3, 3]
+        nextScene: [4, 6]
     },
-    {//Slutet av spelet 3
-        description: "Wow! What a jump!!!! You are really good at this Player one! Ypu are now at the end of the mountain. Do you want to go again?",
+    {// Röd bana 3, slut
+        description: "Wow! What a jump!!!! You are really good at this Player one! You are now at the end of the mountain. Do you want to go again?",
         choices: ["Yes", "No"],
-        nextScene: [0,0]
+        nextScene: [0,7]
     },
-    {
+    { // Grön bana 4, slut
+        description: "Wow what a picture! You'll get 30 likes in one minute! You are now at the end of the hill, do you want to go again?",
+        choices: ["Yes", "No"],
+        nextScene: [0, 7]
+    },
+    { // Röd bana 5, ej hopp
+        description: "Safety first! You chose not to jump, you are now safe and sound down by the lift, do you want to go again?",
+        choices: ["Yes", "No"],
+        nextScene: [0, 7]
+    },
+    { // Grön bana 6, ej kort
+        description: "Player one! You are not into the social media, you want to be in the moment! You have now shredded down the beautiful mountain and are at the end. Do you want to go again?",
+        choices: ["Yes", "No"],
+        nextScene: [0, 7]
+    },
+    { // Quit 7
+        description: "Good job Player one! You are well deserved some nice cold beers at the after-skii. Have fun and stay  safe!",
         
     }
 ];
