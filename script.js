@@ -29,25 +29,28 @@ function redLane() {
 let currentScene = 0
 
 const scenes = [
-    {
-        description: "Du befinner dig högst uppe på en skidbacke, ser två banor att åka nedför. Vill du åka ner för Gröna banan eller Röda?",
-        choices: ["grön bana", "röd bana"],
+    { // Start 0
+        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on?",
+        choices: ["Green lane", "Red Lane"],
         nextScene: [2, 1]
     }, 
-    { //Röd bana
-        description: "Du har nu valt röd bana och möter ett stort hopp. Vill du hoppa?",
-        choices: ["Ja", "Nej"],
-        nextScene: [2, 0]
+    { //Röd bana 1
+        description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! What do you want to do?",
+        choices: ["Yes", "No"],
+        nextScene: [3, 3]
     },
-    { //Grön bana
-        description: "Du valde grön bana! Du kommer till en väldigt vacker vy. Vill du stanna och ta en bild till din snygga insta?",
-        choices: ["Ja", "Nej"],
-        nextScene: [2, 0]
+    { //Grön bana 2
+        description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram?",
+        choices: ["Yes", "No"],
+        nextScene: [3, 3]
     },
-    {//Slutet av spelet
-        description: "Grattis! Du har nu åkt ner för hela banan och står vid liften. Vill du åka en gång till?",
-        choices: ["Ja", "Nej"],
-        nextScene: [2,0]
+    {//Slutet av spelet 3
+        description: "Wow! What a jump!!!! You are really good at this Player one! Ypu are now at the end of the mountain. Do you want to go again?",
+        choices: ["Yes", "No"],
+        nextScene: [0,0]
+    },
+    {
+        
     }
 ];
 // Run our applications
