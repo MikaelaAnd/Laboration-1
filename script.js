@@ -34,48 +34,55 @@ const scenes = [
         choices: ["Green lane", "Red lane"],
         nextScene: [2, 1]
     }, 
-    //HÄNDELSEFÖRLOPP
+    //HÄNDELSEFÖRLOPP 1
     { //Röd bana 1
         description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump, Yes or No?",
         choices: ["Yes", "No"],
-        nextScene: [3, 5]
+        nextScene: [4, -3]
     },
     { //Grön bana 2
         description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram?",
         choices: ["Yes", "No"],
-        nextScene: [4, 6]
+        nextScene: [5, 3]
     },
-    { //Röd bana 3
+    //HÄNDELSEFÖRLOPP VID VAL 'NEJ'
+    {   // Båda banor 3
+        description: "You decided to kept on shredding down the mouintain without a care in the world, you are now down by the lift. Do you want to go again? Write 'Yes' or 'No'",
+        choices: ["Yes", "No"],
+        nexScene: [0, 10]
+    },
+    //HÄNDELSEFÖRLOPP 2
+    { // Röd bana 4
         description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write 'Try', if youy want to hope for the best and just land, write 'Land'. ",
         choices: ["Turn", "Land"],
-        nextScene: [-,-]
+        nextScene: [6, 8]
     },
-
-
-    //SLUT-VAL
-    {// Röd bana -, slut
-        description: "Wow! What a jump!!!! You are really good at this Player one! You are now at the end of the mountain. Do you want to go again?",
+    { // Grön bana 5
+        description: "Argh! Your phone is not acclimated with the cold weather, you only got 1% battery left. Ok Player one, you got two options: Write 'Rush' if you want to rush down to the after-ski and charge your phone or write 'Calm' if you don't care about the battery and just wanna enjoy the skiing down to the lift again",
+        choices: ["Rush", "Calm"],
+        nextScene: [8, 9]
+    },
+    //HÄNDELSEFÖRLOPP 3
+    { // Röd bana 6
+        description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today but welcome back tomorrow!",
+        return(scenes)
+    },
+    { // Grön bana 8
+        description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymor today though but welcome back tomorrow!",
+        return(scenes)
+    },
+    { // Röd bana 9
+        description: "You landed perfectly, you ski-boot was just playing a trick in the wind! You swoosh pass a couple of admirers and you are now in the end of the mountain. Do you want to go again, write 'Yes' or 'No'",
         choices: ["Yes", "No"],
-        nextScene: [0,7]
+        nextScene: [0, 10]
     },
-    { // Grön bana -, slut
-        description: "Wow what a picture! You'll get 30 likes in one minute! You are now at the end of the hill, do you want to go again?",
+    { // Grön bana 8
+        description: "You calmely kept on skiing down the mountain without the stress of looking at likes on your wonderful picture. Now you are down, do you want to go again? Write 'Yes' or 'No",
         choices: ["Yes", "No"],
-        nextScene: [0, 7]
+        nexScene: [0, 10]
     },
-    { // Röd bana -, ej hopp
-        description: "Safety first! You chose not to jump, you are now safe and sound down by the lift, do you want to go again?",
-        choices: ["Yes", "No"],
-        nextScene: [0, 7]
-    },
-    { // Grön bana -, ej kort
-        description: "Player one! You are not into the social media, you want to be in the moment! You have now shredded down the beautiful mountain and are at the end. Do you want to go again?",
-        choices: ["Yes", "No"],
-        nextScene: [0, 7]
-    },
-    { // Quit 7
-        description: "Good job Player one! You are well deserved some nice cold beers at the after-skii. Have fun and stay  safe!",
-        
+    { // SLUT 10
+        descriptiopn: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!"
     }
 ];
 // Run our applications
