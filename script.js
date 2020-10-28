@@ -58,19 +58,21 @@ const scenes = [
         nextScene: [6, 8]
     },
     { // Grön bana 5
-        description: "Argh! Your phone is not acclimated with the cold weather, you only got 1% battery left. Ok Player one, you got two options: Write Rush if you want to rush down to the after-ski and charge your phone or write Calm if you don't care about the battery and just wanna enjoy the skiing down to the lift again",
+        description: "Argh! Your phone is not acclimatized with the cold weather, you've only got 1% battery left. Ok Player one, you got two options: Write Rush if you want to rush down to the after-ski and charge your phone or write Calm if you don't care about the battery and just wanna enjoy the skiing down to the lift again",
         choices: ["Rush", "Calm"],
         nextScene: [7, 9]
     },
     //HÄNDELSEFÖRLOPP 3
     { // Röd bana 6
-        description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today but welcome back tomorrow!",
-        nextScene: [0, 0]
+        description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today! Write Ok and we will se you tomorrow!",
+        choices: ["Ok"],
+        
         
     },
     { // Grön bana 7
-        description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymor today though but welcome back tomorrow!",
-        nextScene: [0, 0]
+        description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymore today! Write Ok and we will see you tomorrow!",
+        choices: ["Ok"],
+        
        
     },
     { // Röd bana 8
@@ -81,10 +83,11 @@ const scenes = [
     { // Grön bana 9
         description: "You calmly kept on skiing down the mountain without the stress of looking at likes on your wonderful picture. Now you are down, do you want to go again? Write 'Yes' or 'No",
         choices: ["Yes", "No"],
-        nexScene: [0, 10]
+        nextScene: [0, 10]
     },
     { // SLUT 10
-        descriptiopn: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
+        description: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
+        choices: ["Ok"],
         nextScene: [0, 0]
     }
 ];
@@ -109,7 +112,6 @@ function handleUserChoice(answer) {
     if (answer === scenes[currentScene].choices[1]) {
         currentScene = scenes[currentScene].nextScene[1]
     } 
-    
 
     presentScene()
 }
