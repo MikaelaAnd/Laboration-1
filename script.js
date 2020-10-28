@@ -24,6 +24,9 @@ function redLane() {
     alert("Alright Player one! Shredding down the red lane, you are now facing a big jump! What do you want to do?");
 }*/
 
+// Start button
+
+
 
 // define the state for our application
 let currentScene = 0
@@ -62,7 +65,7 @@ const scenes = [
         choices: ["Rush", "Calm"],
         nextScene: [7, 9]
     },
-    //HÄNDELSEFÖRLOPP 3
+    //ALTERNATIVA SLUT 3
     { // Röd bana 6
         description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today! Write Ok and we will se you tomorrow!",
         choices: ["Ok"],
@@ -85,7 +88,7 @@ const scenes = [
         choices: ["Yes", "No"],
         nextScene: [0, 10]
     },
-    { // SLUT 10
+    { // AVSLUT 10
         description: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
         choices: ["Ok"],
         nextScene: [0, 0]
@@ -97,6 +100,12 @@ window.onload = presentScene;
 
 //Define the actions for our applications
 function presentScene() {
+    // const changingText = document.getElementById("changingText")
+    // const buttonOne = document.getElementById("buttonOne")
+    // const buttonOne = document.getElementById("buttonTwo")
+    // changingText.innerHTML = scenes[currentScene].description;
+    // buttonOne.innerHTML = scenes[currentScene].choices[1];
+    // buttonTwo.innerHTML = scenes[currentScene].choices[2];
     const answer = prompt(scenes[currentScene].description);
     handleUserChoice(answer)
 
@@ -104,7 +113,7 @@ function presentScene() {
 
 
 function handleUserChoice(answer) {
-    console.log(answer);
+    
 
     if (answer === scenes[currentScene].choices[0]) {
         currentScene = scenes[currentScene].nextScene[0]
