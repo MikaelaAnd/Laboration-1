@@ -28,9 +28,13 @@ function redLane() {
 
 
 
-// define the state for our application
+/**
+ * variabel for the current scene
+ */
 let currentScene = 0
-
+/**
+ * the whole story
+ */
 const scenes = [
     { // Start 0
         description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Red lane or Green Lane?",
@@ -94,11 +98,15 @@ const scenes = [
         nextScene: [0, 0]
     }
 ];
+
 // Run our applications
 window.onload = presentScene;
 
 
-//Define the actions for our applications
+
+/**
+ * this is the description of the present scene
+ */
 function presentScene() {
     // const changingText = document.getElementById("changingText")
     // const buttonOne = document.getElementById("buttonOne")
@@ -111,7 +119,10 @@ function presentScene() {
 
 }
 
-
+/**
+ * 
+ * @param {*} answer 
+ */
 function handleUserChoice(answer) {
     
 
