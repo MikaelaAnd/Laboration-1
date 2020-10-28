@@ -48,7 +48,7 @@ const scenes = [
         nextScene: [4, 3]
     },
     { //Grön bana 2
-        description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram?",
+        description: "You chose the green lane! Whilst shredding down you are looking around and the view is incredible! Do you want to stop and take a pic to your instagram? Write Yes or No",
         choices: ["Yes", "No"],
         nextScene: [5, 3]
     },
