@@ -1,32 +1,3 @@
-/*function startGame() {
-    alert("Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on?")
-}
-
-function pickALane() {
-    let decideLane = prompt("Which lane? Red lane or Green Lane?");
-
-        if (decideLane == "Red Lane") {
-            alert("Great! Head down to the red lane!");
-            return(decideLane);
-        } else (decideLane == "Green Lane") 
-            alert("Good choice! Head down to the green lane!");
-
-}
-
-function changeLane() {
-
-    let elem = document.getElementById("change");
-    if (elem.value=="Pick a lane!") elem.value = "Shred away!";
-    else elem.value = "Pick a lane!";
-}
-
-function redLane() {
-    alert("Alright Player one! Shredding down the red lane, you are now facing a big jump! What do you want to do?");
-}*/
-
-// Start button
-
-
 
 /**
  * variabel for the current scene
@@ -60,7 +31,7 @@ const scenes = [
     },
     //HÄNDELSEFÖRLOPP 2
     { // Röd bana 4
-        description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write Try, if youy want to hope for the best and just land, write Land. ",
+        description: "Wow! You are actually flying Player one! But something is happening with your left ski-boot. Help! If you want to try to turn in the sky write Try, if you want to hope for the best and just land, write Land. ",
         choices: ["Try", "Land"],
         nextScene: [6, 8]
     },
@@ -73,12 +44,13 @@ const scenes = [
     { // Röd bana 6
         description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today! Write Ok and we will se you tomorrow!",
         choices: ["Ok"],
-        
+        nextScene: []
         
     },
     { // Grön bana 7
         description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymore today! Write Ok and we will see you tomorrow!",
         choices: ["Ok"],
+        nextScene: []
         
     //ALTERNATIVA SLUT ALLT GICK BRA
     },
@@ -120,10 +92,7 @@ function presentScene() {
  * @param {*} answer 
  */
 function handleUserChoice(answer) {
-    if (scenes[currentScene].choices[10]) {
-        alert('END OF GAME');
-        return
-    }
+ 
 
     if (answer === scenes[currentScene].choices[0]) {
         currentScene = scenes[currentScene].nextScene[0]
