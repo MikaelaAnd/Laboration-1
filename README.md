@@ -1,4 +1,6 @@
-# Laboration-1
+Laboration 1
+
+# Atlas ski-resort
 
 Spelet utspelar sig på en skidresort. Spelaren börjar uppe på skidberget och får välja vilken backe hen vill åka i, grön eller röd.
 
