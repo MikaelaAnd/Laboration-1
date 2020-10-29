@@ -23,7 +23,7 @@ const scenes = [
         nextScene: [5, 3]
     },
     //EVENT WHEN PLAYER CHOSED 'NO'
-    {   // Both lanes 3
+    { // Both lanes 3
         description: "You decided to kept on shredding down the mouintain without a care in the world, you are now down by the lift. Do you want to go again? Write 'Yes' or 'No'",
         choices: ["Yes", "No"],
         nextScene: [0, 10]
@@ -53,12 +53,12 @@ const scenes = [
 
     },
     //ENDING
-    { // Röd bana 8
+    { // Red lane 8
         description: "You landed perfectly, you ski-boot was just playing a trick in the wind! You swoosh pass a couple of admirers and you are now in the end of the mountain. Do you want to go again, write 'Yes' or 'No'",
         choices: ["Yes", "No"],
         nextScene: [0, 10]
     },
-    { // Grön bana 9
+    { // Green lane 9
         description: "You calmly kept on skiing down the mountain without the stress of looking at likes on your wonderful picture. Now you are down, do you want to go again? Write 'Yes' or 'No",
         choices: ["Yes", "No"],
         nextScene: [0, 10]
