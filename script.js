@@ -8,13 +8,13 @@ let currentScene = 0
  */
 const scenes = [
     { // Start 0
-        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Red lane or Green Lane?",
+        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Write 'Red lane' or 'Green Lane'",
         choices: ["Green lane", "Red lane"],
         nextScene: [2, 1]
     }, 
     //HÄNDELSEFÖRLOPP 1
     { //Röd bana 1
-        description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump, Yes or No?",
+        description: "Alright Player one! Shredding down the red lane, you are now facing a big jump! Do you want to jump? Write 'Yes' or 'No'",
         choices: ["Yes", "No"],
         nextScene: [4, 3]
     },
@@ -65,7 +65,7 @@ const scenes = [
         nextScene: [0, 10]
     },
     { // AVSLUT 10
-        description: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
+        description: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Write 'Ok' and Stay safe!",
         choices: ["Ok"],
         nextScene: []
         
