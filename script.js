@@ -89,7 +89,7 @@ function presentScene() {
 
 /**
  * 
- * @param {*} answer describes what answer takes you to whoch scene
+ * @param {function} answer describes what answer takes you to which scene
  */
 function handleUserChoice(answer) {
  
