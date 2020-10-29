@@ -4,6 +4,6 @@ Spelet utspelar sig på en skidresort. Spelaren börjar uppe på skidberget och 
 
 ## Händelser
 
-Beroende på vilken väg spelaren väljer så kommer spelaren råka ut för vissa händelser där spelarens val ändrar storyn.
+Beroende på vilken väg spelaren väljer så kommer spelaren råka ut för vissa händelser där spelarens val ändrar storyn, hoppas du inte råkar illa ut...
 
 Länk till mitt spel --> [Här!](https://mikaelaand.github.io/Laboration-1/)
