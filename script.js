@@ -8,7 +8,7 @@ let currentScene = 0
  */
 const scenes = [
     { // Start 0
-        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Write 'Red lane' or 'Green Lane'",
+        description: "Hello Player One! Welcome to Atlas Ski-resort. You have now jumped out of the lift, standing on top of the ski mountain. Which lane do you want to shred down on? Write 'Red lane' or 'Green lane'",
         choices: ["Green lane", "Red lane"],
         nextScene: [2, 1]
     }, 
