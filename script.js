@@ -73,7 +73,7 @@ const scenes = [
 
 ];
 
-// Run our applications
+/** Run our applications */
 window.onload = presentScene;
 
 
@@ -89,7 +89,7 @@ function presentScene() {
 
 /**
  * 
- * @param {*} answer 
+ * @param {*} answer describes what answer takes you to whoch scene
  */
 function handleUserChoice(answer) {
  
