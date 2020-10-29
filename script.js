@@ -56,7 +56,7 @@ const scenes = [
     {   // Båda banor 3
         description: "You decided to kept on shredding down the mouintain without a care in the world, you are now down by the lift. Do you want to go again? Write 'Yes' or 'No'",
         choices: ["Yes", "No"],
-        nexScene: [0, 10]
+        nextScene: [0, 10]
     },
     //HÄNDELSEFÖRLOPP 2
     { // Röd bana 4
@@ -69,7 +69,7 @@ const scenes = [
         choices: ["Rush", "Calm"],
         nextScene: [7, 9]
     },
-    //ALTERNATIVA SLUT 3
+    //ALTERNATIVA SLUT SJUKHUS
     { // Röd bana 6
         description: "You chose to turn! Sadly, you twist so much so you loose balance and land on your knee. Aouch! But no need to worry, Atlas help-scooter is on it's way and will take you to the hospital. You won't be able to ski anymore today! Write Ok and we will se you tomorrow!",
         choices: ["Ok"],
@@ -80,7 +80,7 @@ const scenes = [
         description: "You chose to rush down the mountain. Not a super idea, in all the white snow you miss to notice a rock and you fall and land flat on your nouse. Aouch! But no need to worry, Atlas help-scooter is on it's way. You won' be able to ski anymore today! Write Ok and we will see you tomorrow!",
         choices: ["Ok"],
         
-       
+    //ALTERNATIVA SLUT ALLT GICK BRA
     },
     { // Röd bana 8
         description: "You landed perfectly, you ski-boot was just playing a trick in the wind! You swoosh pass a couple of admirers and you are now in the end of the mountain. Do you want to go again, write 'Yes' or 'No'",
@@ -95,8 +95,10 @@ const scenes = [
     { // AVSLUT 10
         description: "Good job Player One! You can now grab a well deserved beer fom the after-ski, but remember to keep distance and no dancing on the tables. Stay safe!",
         choices: ["Ok"],
-        nextScene: [0, 0]
+        nextScene: []
+        
     }
+
 ];
 
 // Run our applications
@@ -108,15 +110,9 @@ window.onload = presentScene;
  * this is the description of the present scene
  */
 function presentScene() {
-    // const changingText = document.getElementById("changingText")
-    // const buttonOne = document.getElementById("buttonOne")
-    // const buttonOne = document.getElementById("buttonTwo")
-    // changingText.innerHTML = scenes[currentScene].description;
-    // buttonOne.innerHTML = scenes[currentScene].choices[1];
-    // buttonTwo.innerHTML = scenes[currentScene].choices[2];
     const answer = prompt(scenes[currentScene].description);
     handleUserChoice(answer)
-
+   
 }
 
 /**
@@ -124,7 +120,10 @@ function presentScene() {
  * @param {*} answer 
  */
 function handleUserChoice(answer) {
-    
+    if (scenes[currentScene].choices[10]) {
+        alert('END OF GAME');
+        return
+    }
 
     if (answer === scenes[currentScene].choices[0]) {
         currentScene = scenes[currentScene].nextScene[0]
