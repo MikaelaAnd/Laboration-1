@@ -72,7 +72,7 @@ const scenes = [
 
 ];
 
-/** Run our applications */
+//Run our applications 
 window.onload = presentScene;
 
 
@@ -88,17 +88,20 @@ function presentScene() {
 
 /**
  * 
- * @param {string} answer describes what answer takes you to which scene
+ * @param {String} answer describes what answer takes you to which scene
  */
 function handleUserChoice(answer) {
- 
+    if (scenes[currentScene].nextScene.length) {
 
-    if (answer === scenes[currentScene].choices[0]) {
-        currentScene = scenes[currentScene].nextScene[0]
-    }
-    if (answer === scenes[currentScene].choices[1]) {
-        currentScene = scenes[currentScene].nextScene[1]
+        if (answer === scenes[currentScene].choices[0]) {
+            currentScene = scenes[currentScene].nextScene[0]
+        }
+        if (answer === scenes[currentScene].choices[1]) {
+            currentScene = scenes[currentScene].nextScene[1]
+        } 
+    
+        presentScene()
     } 
 
-    presentScene()
+    
 }
